@@ -1,3 +1,0 @@
-c++ -c -Wall main.cpp
-c++ -o main main.o
-./main
