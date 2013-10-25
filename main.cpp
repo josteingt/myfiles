@@ -100,10 +100,10 @@ void jacobimetode(mat& schrodinger, mat& egenvektor, int size){
 
 int main(){
 
-    double pmax = 5.0;
+    double pmax = 40;
     double pmin = 0.0;
-    int steg = 202;
-    double omega = 5;
+    int steg = 500;
+    double omega = 0.25;
     int matstor = steg - 2;
     double h = (pmax-pmin)/(steg-1);
     double hh = h*h;
@@ -192,7 +192,7 @@ int main(){
     //write psikvadrat to file
 
     ofstream fil;
-    fil.open("psikvadrat5without.txt");
+    fil.open("psikvadrat0_01without.txt");
     fil << fixed;
     fil.precision(5);
     fil << 0 << " " << 0 << endl;
